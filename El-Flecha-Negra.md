@@ -1,18 +1,21 @@
-"El Flecha Negra"
+# _El Flecha Negra_
 
-The essence of "El Flecha Negra" and his deep wish of explode every corner of his creativity make of this young musical grouping a result of divergent proposals who comes every day growing with the number of followers. Its wide range of expresions as soon as sound, composition, lyrics and escene projects an auditive show, visual style and provocating able to travel to reflexion, to create supense, bring relief, spread joy and feed the spirit of complaint and protest, able to burst a rhyme, invite the imagination.
+The essence of _El Flecha Negra_ and his deep wish of exploding into every corner of his creativity is the soul of this young musical group, a result of divergent backgrounds with a growing number of fans every day. They have a unique auditory and visual style which provokes reflection, creates supense, brings relief, spreads joy, and feeds the spirit of protest while ingniting the imagination of all who hear them.
 
-A mix of cultures with base in latinoamerican teaching "El Flecha Negra" crosses the universal imaginary colective to share on her the original hearthbeat that moves the world.
-The needles weave a loom of posivilities to a character that is no a stranger to reality and modern, exploring in the aware of reflection adventures and disadventures of a wild outlook that shows our current society. There is space for love, dont stop, madness and celebration.
+A mix of cultures from Latin America spreading the legend of _El Flecha Negra_ crosses into the universal imaginary collective to share a glimpse of the heart beat that moves the world. These needles of culture weave a fantastic tapestry of stories, creating a character that is no stranger to reality and modern life. _El Flecha Negra_ reflects a wild outlook that paints a picture of today's society: love, passion, madness, and celebration.
 
-Its a meeting of friends and teammates influenced by diferent musical currents who create his bottom in latin rhythms pf dance step like reggae and cumbia they in great part the accustic sound from "El Flecha Negra". His members have known each other many years ago in Barcelona wich is the cradle of half blood bands, in where everyone by then plays at diferent groups (barrio candela, microguagua, green valley and mañaners between others).
-Each one of his members has a wide travel in the music escene , treading many stages of Europe and Latinoamerica. After many years of share and playing for separate  in many musical groups they decide to shape this cheerful and charismatic band. They materealize it in June of 2014 in the city of Freiburg im Breisgau, Germany
+_El Flecha Negra_ is a roaring river made of many different musical currents. At its heart are latin rhythms like reggae and cumbia, and they flow seamlessly together with accoustic and XXX to form a unique sound. Many years ago the members met in Barcelona, the cradle of half blood bands, where everyone plays in different groups: barrio candela, microguagua, green valley, mañaners, and many more.
 
-Is in there when they make his fist steps with this project. They made it in one of the pallets more atractives and interessant that for years is been the accompanied of they, the street in this place when the most time this band act. Its like as it says "El Flecha Negra" theres nothing more spontaneous and magic than the street.
+Each one of the members has a deep history in the music scene, playing many stages of Europe and Latino America. After many years of sharing and playing separately, they decided to shape this cheerful and charismatic band. They first formed during June of 2014 in Freiburg im Breisgau, Germany.
 
-They also perform in diferent kind of rooms, bars, searchers of music in the street ans festivals, where with music, energy and joy spread everyone who is in there surroundings
-Members of "El Flecha Negra"
+Is in Freiburg that they've taken the first steps with this project, taking stage on the streets of the city. It is just as it says in _El Flecha Negra_ — there is nothing more spontaneous and magic than the streets.
 
-Cristian Kata: Chile, voice, trumpet and guitar      Lalo Abbadie: Mexico, bass, contrabass and choirs
-Tatán González: Chile, percussions, trumpet and choirs      Alexis Kuncar: Bolivia, guitar, soloist and choirs
+They perform in all kinds of rooms, bars, streets and festivals. They spread music, energy, and joy to all who cross their path.
+
+## Members of _El Flecha Negra_
+
+- **Cristian Kata:** Chile, lead vocals, trumpet, guitar
+- **Lalo Abbadie:** Mexico, bass, contrabass, vocals
+- **Tatán González:** Chile, percussion, trumpet, vocals
+- **Alexis Kuncar:** Bolivia, lead guitar, vocals
 

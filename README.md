@@ -1,3 +1,3 @@
 # Website for El Flecha Negra
 
-Just a normal Jekyll site, ya know?
+Jekyll website for the one and only _El Flecha Negra_
