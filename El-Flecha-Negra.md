@@ -1,8 +1,8 @@
 # _El Flecha Negra_
 
-The essence of _El Flecha Negra_ and his deep wish of exploding into every corner of his creativity is the soul of this young musical group, a result of divergent backgrounds with a growing number of fans every day. They have a unique auditory and visual style which provokes reflection, creates supense, brings relief, spreads joy, and feeds the spirit of protest while ingniting the imagination of all who hear them.
+The essence of _El Flecha Negra_ and his deep wish of exploding into every corner of his creativity is the soul of this young musical group, a result of divergent backgrounds with a growing number of fans every day. They have a unique auditory and visual style which provokes reflection, creates suspense, brings relief, spreads joy, and feeds the spirit of protest while igniting the imagination of all who hear them.
 
-A mix of cultures from Latin America spreading the legend of _El Flecha Negra_ crosses into the universal imaginary collective to share a glimpse of the heart beat that moves the world. These needles of culture weave a fantastic tapestry of stories, creating a character that is no stranger to reality and modern life. _El Flecha Negra_ reflects a wild outlook that paints a picture of today's society: love, passion, madness, and celebration.
+A mix of cultures from Latin America spreading the legend of _El Flecha Negra_ crosses into the universal imaginary collective to share a glimpse of the heart beat that moves the world. These needles of culture weave a fantastic tapestry of stories, creating a character that is no stranger to reality and modern life. _El Flecha Negra_ reflects a wild outlook that paints a picture of today's society: love, passion, sadness, and celebration.
 
 _El Flecha Negra_ is a roaring river made of many different musical currents. At its heart are latin rhythms like reggae and cumbia, and they flow seamlessly together with accoustic vibes to form a unique sound. Many years ago the members met in Barcelona, the cradle of half blood bands, where everyone plays in different groups: barrio candela, microguagua, green valley, mañaners, and many more.
 
