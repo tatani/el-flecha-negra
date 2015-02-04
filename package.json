@@ -1,0 +1,17 @@
+{
+  "name": "el_flecha_negra",
+  "version": "0.0.1",
+  "homepage": "http://el-flecha-negra.com",
+  "repository": "https://github.com/rupl/el-flecha-negra",
+  "dependencies": {},
+  "devDependencies": {
+    "compass-options": "^0.1.1",
+    "gulp": "^3.8.9",
+    "gulp-compass": "^2.0.3",
+    "gulp-task-listing": "^1.0.0",
+    "gulp-util": "^3.0.2"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  }
+}

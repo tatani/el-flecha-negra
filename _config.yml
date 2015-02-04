@@ -1,0 +1,11 @@
+name: El Flecha Negra
+permalink: pretty
+debug: false
+development: false
+
+markdown: redcarpet
+redcarpet:
+  extensions: ["smart"]
+
+highlighter: true
+exclude: [README.md, config.rb, package.json, gulpfile.js, Gemfile, Gemfile.lock, node_modules, ".vendor"]

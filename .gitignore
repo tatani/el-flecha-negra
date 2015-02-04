@@ -1,0 +1,14 @@
+# Ignore generated files and directories
+_site
+
+# Development files, directories, and asset caches
+.bundle
+.vendor
+.sass-cache
+.jekyll-assets-cache
+node_modules
+sftp-config.json
+
+# OS files / logfiles
+.DS_Store
+npm-debug.log
