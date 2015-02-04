@@ -3,8 +3,6 @@ title: El Flecha Negra
 layout: page
 ---
 
-<img src="/img/logo_el-flecha-negra.jpg" alt="El Flecha Negra">
-
 The essence of _El Flecha Negra_ and his deep wish of exploding into every corner of his creativity is the soul of this young musical group, a result of divergent backgrounds with a growing number of fans every day. They have a unique auditory and visual style which provokes reflection, creates suspense, brings relief, spreads joy, and feeds the spirit of protest while igniting the imagination of all who hear them.
 
 A mix of cultures from Latin America spreading the legend of _El Flecha Negra_ crosses into the universal imaginary collective to share a glimpse of the heart beat that moves the world. These needles of culture weave a fantastic tapestry of stories, creating a character that is no stranger to reality and modern life. _El Flecha Negra_ reflects a wild outlook that paints a picture of today's society: love, passion, sadness, and celebration.

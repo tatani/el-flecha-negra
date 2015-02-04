@@ -1,9 +1,11 @@
 //////////////////////////////////////////////////
 // Footer
 //////////////////////////////////////////////////
+
 footer {
   max-width: $grid-max;
   margin: 0 auto;
+  padding: $base-gutter;
 
   .copyright {
     text-align: center;

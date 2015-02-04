@@ -12,7 +12,7 @@
 
 // Set size and default spacing
 body {
-  font-size: 20px;
+  font-size: $base-font;
   line-height: 1.32;
 }
 
@@ -30,4 +30,11 @@ h1 {
 
 h2 {
   font-size: 48px;
+}
+
+// Lists
+ul,
+ol {
+  margin: 0;
+  padding: 0;
 }

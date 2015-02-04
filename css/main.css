@@ -422,6 +422,12 @@ h2 {
   font-size: 48px;
 }
 
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background: #041425;
   color: #fff;
@@ -430,18 +436,25 @@ body {
 main {
   max-width: 960px;
   margin: 0 auto;
-  padding: 1em;
+  padding: 0 40px;
 }
-main img {
-  max-width: 100%;
+@media (min-width: 1000px) {
+  main {
+    padding: 0;
+  }
 }
 
 footer {
   max-width: 960px;
   margin: 0 auto;
+  padding: 40px;
 }
 footer .copyright {
   text-align: center;
   color: #2C5979;
   font-size: .9em;
+}
+
+img {
+  max-width: 100%;
 }

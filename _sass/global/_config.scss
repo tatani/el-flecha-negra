@@ -2,5 +2,12 @@
 // Sass configuration
 //////////////////////////////////////////////////
 
-// Grid settings
+// Type defaults
+$base-font: 20px;
+$base-gutter: ($base-font * 2);
+
+// Grid max
 $grid-max: 960px;
+
+// Breakpoint settings
+$big: $grid-max + $base-gutter;
