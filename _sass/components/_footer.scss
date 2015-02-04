@@ -1,0 +1,13 @@
+//////////////////////////////////////////////////
+// Footer
+//////////////////////////////////////////////////
+footer {
+  max-width: $grid-max;
+  margin: 0 auto;
+
+  .copyright {
+    text-align: center;
+    color: $subdued;
+    font-size: .9em;
+  }
+}

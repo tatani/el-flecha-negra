@@ -1,0 +1,33 @@
+//////////////////////////////////////////////////
+// Typography
+//////////////////////////////////////////////////
+
+// Import graffiti font
+@font-face {
+  font-family: 'amsterdam';
+  src: font-url('amsterdam.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Set size and default spacing
+body {
+  font-size: 20px;
+  line-height: 1.32;
+}
+
+// Headings
+h1,
+h2 {
+  font-family: 'amsterdam';
+  font-weight: 400;
+  margin: .5em 0 0 0;
+}
+
+h1 {
+  font-size: 64px;
+}
+
+h2 {
+  font-size: 48px;
+}

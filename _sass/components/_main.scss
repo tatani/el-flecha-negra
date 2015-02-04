@@ -1,0 +1,14 @@
+//////////////////////////////////////////////////
+// Main content area
+//////////////////////////////////////////////////
+
+main {
+  max-width: $grid-max;
+  margin: 0 auto;
+  padding: 1em;
+
+  // Restrict all images to the viewport size.
+  img {
+    max-width: 100%;
+  }
+}

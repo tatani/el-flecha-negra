@@ -1,0 +1,20 @@
+// Dependencies
+@import 'compass';
+@import 'breakpoint';
+
+// Variables and config
+@import 'global/config';
+@import 'global/colors';
+
+// Defaults
+@import 'global/normalize';
+@import 'global/type';
+
+// Import global components
+@import 'components/page';
+@import 'components/header';
+@import 'components/main';
+@import 'components/footer';
+
+// Import content components
+@import 'components/front';
