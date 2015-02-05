@@ -6,8 +6,4 @@ main {
   max-width: $grid-max;
   margin: 0 auto;
   padding: 0 $base-gutter;
-
-  @include breakpoint($big) {
-    padding: 0;
-  }
 }

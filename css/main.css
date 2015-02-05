@@ -411,7 +411,12 @@ h1,
 h2 {
   font-family: 'amsterdam';
   font-weight: 400;
-  margin: .5em 0 0 0;
+  margin: .5em 0;
+  line-height: 0.7;
+}
+h1 em,
+h2 em {
+  white-space: nowrap;
 }
 
 h1 {
@@ -433,15 +438,15 @@ body {
   color: #fff;
 }
 
+header .logo {
+  margin: .25em 0;
+  text-align: center;
+}
+
 main {
   max-width: 960px;
   margin: 0 auto;
   padding: 0 40px;
-}
-@media (min-width: 1000px) {
-  main {
-    padding: 0;
-  }
 }
 
 footer {
