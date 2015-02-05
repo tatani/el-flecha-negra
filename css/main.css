@@ -404,9 +404,14 @@ th {
 }
 body {
   color: #ddd;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 200;
   line-height: 1.36;
+}
+@media (min-width: 896px) {
+  body {
+    font-size: 20px;
+  }
 }
 
 em,
@@ -456,15 +461,15 @@ header .logo {
 }
 
 main {
-  max-width: 960px;
+  max-width: 860px;
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 0 36px;
 }
 
 footer {
-  max-width: 960px;
+  max-width: 860px;
   margin: 0 auto;
-  padding: 40px;
+  padding: 36px;
 }
 footer .social {
   text-align: center;
@@ -472,13 +477,12 @@ footer .social {
 footer .social li {
   display: inline-block;
   margin: 0 .5em;
-  padding-left: 40px;
+  padding-left: 36px;
   background-repeat: no-repeat;
   background-position: 5px 0;
 }
 footer .social li a {
   color: #ddd;
-  font-size: .9em;
   font-weight: 100;
   text-decoration: none;
   border-bottom: dotted 1px rgba(221, 221, 221, 0.5);

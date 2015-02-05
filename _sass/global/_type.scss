@@ -16,6 +16,10 @@ body {
   font-size: $base-font;
   font-weight: 200;
   line-height: 1.36;
+
+  @include breakpoint($big) {
+    font-size: $base-font + 2;
+  }
 }
 
 // Emphasized text
