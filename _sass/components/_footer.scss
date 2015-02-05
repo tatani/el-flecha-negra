@@ -7,6 +7,46 @@ footer {
   margin: 0 auto;
   padding: $base-gutter;
 
+  .social {
+    text-align: center;
+
+    // Default social link styles
+    li {
+      display: inline-block;
+      margin: 0 .5em;
+      padding-left: $base-gutter;
+      background-repeat: no-repeat;
+      background-position: 5px 0;
+
+      a {
+        color: $white;
+        font-size: .9em;
+        font-weight: 100;
+        text-decoration: none;
+        border-bottom: dotted 1px rgba($white, .5);
+        transition: $x-standard;
+
+        &:hover {
+          border-color: rgba($white, 1);
+        }
+      }
+    }
+
+    // Individual icons
+    .soundcloud {
+      background-image: inline-image('svg/social-soundcloud.svg');
+    }
+    .youtube {
+      background-image: inline-image('svg/social-youtube.svg');
+    }
+    .facebook {
+      background-image: inline-image('svg/social-facebook.svg');
+    }
+    .twitter {
+      background-image: inline-image('svg/social-twitter.svg');
+    }
+  }
+
   .copyright {
     text-align: center;
     color: $subdued;

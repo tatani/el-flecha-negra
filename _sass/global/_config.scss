@@ -11,3 +11,6 @@ $grid-max: 960px;
 
 // Breakpoint settings
 $big: $grid-max + $base-gutter;
+
+// Transitions
+$x-standard: all .16s ease-in-out;

@@ -12,8 +12,17 @@
 
 // Set size and default spacing
 body {
+  color: $white;
   font-size: $base-font;
-  line-height: 1.32;
+  font-weight: 200;
+  line-height: 1.36;
+}
+
+// Emphasized text
+em,
+strong {
+  // True white, don't use $white variable!
+  color: #fff;
 }
 
 // Headings
@@ -27,6 +36,7 @@ h2 {
   // Never let the band name wrap
   em {
     white-space: nowrap;
+    color: inherit; // override default color for emphasized text.
   }
 }
 
@@ -43,4 +53,8 @@ ul,
 ol {
   margin: 0;
   padding: 0;
+
+  li {
+    margin-bottom: .5em;
+  }
 }
