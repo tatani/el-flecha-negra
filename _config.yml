@@ -9,3 +9,6 @@ redcarpet:
 
 highlighter: pygments
 exclude: [README.md, config.rb, package.json, gulpfile.js, Gemfile, Gemfile.lock, node_modules, ".vendor"]
+
+# Google Analytics tracking ID.
+ga: 'UA-432773-17'
