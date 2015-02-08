@@ -7,4 +7,40 @@ header {
     margin: .25em 0;
     text-align: center;
   }
+
+  nav {
+    max-width: $grid-max;
+    margin: 0 auto 2em;
+    text-align: center;
+    border-bottom: 1px dotted rgba($subdued, .25);
+
+    li {
+      display: inline-block;
+      margin: 0 .2em;
+
+      a {
+        display: inline-block;
+        padding: .25em 1em;
+        color: $white;
+        text-decoration: none;
+
+        // Create a little hand pointing to each link.
+        &::before {
+          display: inline-block;
+          content: '\261e';
+          padding-right: 10px;
+          position: relative;
+          top: 2px;
+          transform: translateX(0);
+          transition: $x-standard;
+        }
+
+        // Move the hand closer to the link on hover/click/tap.
+        &:hover::before,
+        &:active::before {
+          transform: translateX(4px);
+        }
+      }
+    }
+  }
 }
