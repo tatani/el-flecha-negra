@@ -479,7 +479,7 @@ footer .social li {
   margin: 0 .5em;
   padding-left: 36px;
   background-repeat: no-repeat;
-  background-position: 5px 0;
+  background-position: 0 0;
 }
 footer .social li a {
   color: #ddd;
