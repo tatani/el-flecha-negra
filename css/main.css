@@ -512,3 +512,30 @@ footer .copyright {
 img {
   max-width: 100%;
 }
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body.videos {
+  text-align: center;
+}
+body.videos h1 {
+  font-size: 48px;
+}
+@media (min-width: 896px) {
+  body.videos h1 {
+    font-size: 64px;
+  }
+}

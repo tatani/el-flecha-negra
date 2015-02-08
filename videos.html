@@ -1,0 +1,10 @@
+---
+layout: page
+bodyclass: videos
+---
+
+<h1>Videos of <em>El Flecha Negra</em></h1>
+
+{% for video in site.videos %}
+  {% include youtube.html %}
+{% endfor %}
