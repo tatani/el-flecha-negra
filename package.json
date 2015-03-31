@@ -5,6 +5,7 @@
   "repository": "https://github.com/rupl/el-flecha-negra",
   "dependencies": {},
   "devDependencies": {
+    "browser-sync": "^2.5.0",
     "compass-options": "^0.1.1",
     "gulp": "^3.8.9",
     "gulp-compass": "^2.0.3",

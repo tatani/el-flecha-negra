@@ -3,6 +3,8 @@ var gutil = require('gulp-util');
 var color = gutil.colors;
 
 // Include Our Plugins
+var bs = require('browser-sync');
+var reload = bs.reload;
 var compass = require('gulp-compass');
 var paths = require('compass-options').paths();
 var taskListing = require('gulp-task-listing');
