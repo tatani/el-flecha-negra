@@ -1,6 +1,8 @@
+// Gulp utils
 var gulp = require('gulp');
 var gutil = require('gulp-util');
 var color = gutil.colors;
+var cp = require('child_process');
 
 // Include Our Plugins
 var bs = require('browser-sync');
@@ -9,7 +11,22 @@ var compass = require('gulp-compass');
 var paths = require('compass-options').paths();
 var taskListing = require('gulp-task-listing');
 
-console.log(paths);
+//////////////////////////////
+// Jekyll
+//////////////////////////////
+gulp.task('jekyll', function() {
+  return cp.spawn('bundle', ['exec', 'jekyll', 'build', '--config=_config.yml,_config.dev.yml'], {stdio: 'inherit'})
+    .on('close', reload);
+});
+
+//////////////////////////////
+// BrowserSync
+//////////////////////////////
+gulp.task('browser-sync', function() {
+  bs({
+    server: './_site/'
+  });
+});
 
 //////////////////////////////
 // Compass
@@ -34,13 +51,20 @@ gulp.task('compass', function () {
       );
       this.emit('end');
     })
-    .pipe(gulp.dest(paths.css));
+    .pipe(gulp.dest(paths.css))
+    .pipe(gulp.dest('_site/' + paths.css))
+    .pipe(reload({stream: true}));
 });
 
+//////////////////////////////
+// BrowserSync + Gulp watch
+//////////////////////////////
+gulp.task('bs', ['jekyll', 'compass', 'browser-sync', 'watch']);
 
 // Watch Files For Changes
 gulp.task('watch', function() {
   gulp.watch(paths.sass + '/**/*.scss', ['compass']);
+  gulp.watch(['./**/*.{md,html}', '!./_site/**/*.*'], ['jekyll']);
 });
 
 // Add a task to render the output
