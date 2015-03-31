@@ -17,7 +17,4 @@ They perform in all kinds of rooms, bars, streets and festivals. They spread mus
 
 ## Members of _El Flecha Negra_
 
-- **Cristian Kata:** Chile, lead vocals, trumpet, guitar
-- **Lalo Abbadie:** Mexico, bass, contrabass, vocals
-- **Tatán González:** Chile, percussion, trumpet, vocals
-
+{% include list-bios.html %}

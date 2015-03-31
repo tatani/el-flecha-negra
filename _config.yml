@@ -17,6 +17,9 @@ collections:
     output: false
   events:
     output: false
+  bios:
+    output: true
+    permalink: /bios/:name
 
 # Google Analytics tracking ID.
 ga: 'UA-432773-17'
