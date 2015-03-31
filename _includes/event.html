@@ -1,0 +1,7 @@
+<div class="event-wrapper">
+  <p>
+    We played at <strong>{{ event.title }}</strong>
+    {% if event.date %}on {{ event.date }}{% endif %}
+    {% if event.url %}&mdash; <a href="{{ event.url }}">more info</a>{% endif %}.
+  </p>
+</div>

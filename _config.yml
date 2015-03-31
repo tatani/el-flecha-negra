@@ -11,9 +11,11 @@ highlighter: pygments
 exclude: [README.md, config.rb, package.json, gulpfile.js, Gemfile, Gemfile.lock, node_modules, ".vendor"]
 
 # Content types
+# - Set 'output' of any collection to `true` to generate individual pages.
 collections:
   videos:
-    # Set to true to make individual video pages. Listed on one page for now.
+    output: false
+  events:
     output: false
 
 # Google Analytics tracking ID.

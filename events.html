@@ -1,0 +1,10 @@
+---
+layout: page
+bodyclass: events
+---
+
+<h1><em>El Flecha Negra</em> Shows and Gigs</h1>
+
+{% for event in site.events %}
+  {% include event.html %}
+{% endfor %}
