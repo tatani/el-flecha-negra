@@ -62,3 +62,16 @@ ol {
     margin-bottom: .5em;
   }
 }
+
+// Links
+%link {
+  color: $white;
+  font-weight: 100;
+  text-decoration: none;
+  border-bottom: dotted 1px rgba($white, .5);
+  transition: $x-standard;
+
+  &:hover {
+    border-color: rgba($white, 1);
+  }
+}

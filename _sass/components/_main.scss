@@ -6,4 +6,8 @@ main {
   max-width: $grid-max;
   margin: 0 auto;
   padding: 0 $base-gutter;
+
+  a {
+    @extend %link;
+  }
 }
