@@ -20,5 +20,4 @@ They perform in all kinds of rooms, bars, streets and festivals. They spread mus
 - **Cristian Kata:** Chile, lead vocals, trumpet, guitar
 - **Lalo Abbadie:** Mexico, bass, contrabass, vocals
 - **Tatán González:** Chile, percussion, trumpet, vocals
-- **Alexis Kuncar:** Bolivia, lead guitar, vocals
 
