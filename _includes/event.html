@@ -1,7 +1,8 @@
 <div class="event-wrapper">
-  <p>
-    We played at <strong>{{ event.title }}</strong>
+  <div class="event">
+    We played <strong>{{ event.title }}</strong>
+    {% if event.where %}at {{ event.where }}{% endif %}
     {% if event.date %}on {{ event.date }}{% endif %}
-    {% if event.url %}&mdash; <a href="{{ event.url }}">more info</a>{% endif %}.
-  </p>
+    {% if event.more-info %}&mdash; <a href="{{ event.more-info }}">more info</a>{% endif %}.
+  </div>
 </div>
