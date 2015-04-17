@@ -548,6 +548,10 @@ img {
   max-width: 100%;
 }
 
+.front .banner {
+  text-align: center;
+}
+
 .event time {
   color: #ddd;
   font-family: "Rock Salt", cursive;
