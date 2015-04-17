@@ -14,6 +14,7 @@ var prefix = require('gulp-autoprefixer');
 var jshint = require('gulp-jshint');
 var stylish = require('jshint-stylish');
 var uglify = require('gulp-uglify');
+var minCSS = require('gulp-minify-css');
 var taskListing = require('gulp-task-listing');
 
 //////////////////////////////
@@ -58,7 +59,9 @@ gulp.task('compass', function () {
     })
     .pipe(gulp.dest(paths.css))
     .pipe(prefix("last 2 versions", "> 1%"))
-    .pipe(gulp.dest('_site/' + paths.css))
+    .pipe(minCSS())
+    .pipe(rename('main.min.css'))
+    .pipe(gulp.dest(paths.css))
     .pipe(reload({stream: true}));
 });
 
