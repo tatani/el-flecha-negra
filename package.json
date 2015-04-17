@@ -5,14 +5,20 @@
   "repository": "https://github.com/rupl/el-flecha-negra",
   "dependencies": {},
   "devDependencies": {
-    "browser-sync": "^2.5.0",
+    "browser-sync": "^2.6.4",
     "compass-options": "^0.1.1",
     "gulp": "^3.8.11",
     "gulp-autoprefixer": "^2.1.0",
     "gulp-compass": "^2.0.3",
+    "gulp-concat": "^2.5.2",
+    "gulp-jshint": "^1.10.0",
+    "gulp-rename": "^1.2.2",
     "gulp-task-listing": "^1.0.0",
+    "gulp-uglify": "^1.2.0",
     "gulp-util": "^3.0.2",
-    "kss": "^2.0.2"
+    "jshint-stylish": "^1.0.1",
+    "kss": "^2.0.2",
+    "picturefill": "^2.3.1"
   },
   "engines": {
     "node": ">=0.10.0"

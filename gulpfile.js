@@ -7,9 +7,13 @@ var cp = require('child_process');
 // Include Our Plugins
 var bs = require('browser-sync');
 var reload = bs.reload;
+var rename = require('gulp-rename');
 var compass = require('gulp-compass');
 var paths = require('compass-options').paths();
 var prefix = require('gulp-autoprefixer');
+var jshint = require('gulp-jshint');
+var stylish = require('jshint-stylish');
+var uglify = require('gulp-uglify');
 var taskListing = require('gulp-task-listing');
 
 //////////////////////////////
@@ -59,14 +63,25 @@ gulp.task('compass', function () {
 });
 
 //////////////////////////////
+// JS
+//////////////////////////////
+gulp.task('js', function () {
+  return gulp.src('node_modules/picturefill/dist/picturefill.js')
+    .pipe(uglify())
+    .pipe(rename("main.js"))
+    .pipe(gulp.dest('js/'));
+});
+
+//////////////////////////////
 // BrowserSync + Gulp watch
 //////////////////////////////
-gulp.task('bs', ['jekyll', 'compass', 'browser-sync', 'watch']);
+gulp.task('bs', ['jekyll', 'compass', 'js', 'browser-sync', 'watch']);
 
 // Watch Files For Changes
 gulp.task('watch', function() {
   gulp.watch(paths.sass + '/**/*.scss', ['compass']);
   gulp.watch(['./**/*.{md,html}', '!./_site/**/*.*'], ['jekyll']);
+  gulp.watch(paths.js + '/**/*.js', ['js']);
 });
 
 // Add a task to render the output
