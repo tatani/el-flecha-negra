@@ -1,6 +1,5 @@
 # Ignore generated files and directories
 _site
-js
 
 # Development files, directories, and asset caches
 .bundle
