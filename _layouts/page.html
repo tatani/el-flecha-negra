@@ -4,7 +4,11 @@
     <meta charset="utf-8">
     <title>{{ page.title }} | {{ site.name }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/css/main.min.css">
+    <script>
+      {% include loadCSS.js %}
+      loadCSS("/css/main.min.css");
+    </script>
+    <noscript><link rel="stylesheet" href="/css/main.min.css"></noscript>
   </head>
   <body{% if page.bodyclass != '' %} class="{{ page.bodyclass }}"{% endif %}>
     <header>

@@ -68,17 +68,23 @@ gulp.task('compass', function () {
 //////////////////////////////
 // JS
 //////////////////////////////
-gulp.task('js', function () {
+gulp.task('js-pf', function () {
   return gulp.src('node_modules/picturefill/dist/picturefill.js')
     .pipe(uglify())
     .pipe(rename("main.js"))
     .pipe(gulp.dest('js/'));
 });
+gulp.task('js-lc', function () {
+  return gulp.src('node_modules/fg-loadcss/loadCSS.js')
+    .pipe(uglify())
+    .pipe(gulp.dest('_includes/'));
+});
+gulp.task('js', ['js-pf', 'js-lc']);
 
 //////////////////////////////
 // BrowserSync + Gulp watch
 //////////////////////////////
-gulp.task('bs', ['jekyll', 'compass', 'js', 'browser-sync', 'watch']);
+gulp.task('bs', ['compass', 'js', 'jekyll', 'browser-sync', 'watch']);
 
 // Watch Files For Changes
 gulp.task('watch', function() {
