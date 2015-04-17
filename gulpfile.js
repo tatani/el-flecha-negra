@@ -9,6 +9,7 @@ var bs = require('browser-sync');
 var reload = bs.reload;
 var compass = require('gulp-compass');
 var paths = require('compass-options').paths();
+var prefix = require('gulp-autoprefixer');
 var taskListing = require('gulp-task-listing');
 
 //////////////////////////////
@@ -52,6 +53,7 @@ gulp.task('compass', function () {
       this.emit('end');
     })
     .pipe(gulp.dest(paths.css))
+    .pipe(prefix("last 2 versions", "> 1%"))
     .pipe(gulp.dest('_site/' + paths.css))
     .pipe(reload({stream: true}));
 });

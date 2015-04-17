@@ -1,0 +1,45 @@
+//
+// Events
+//
+// Events that appear in lists.
+//
+// Style guide: components.event
+//
+
+.event {
+
+  // Event date and time
+  time {
+    color: $white;
+    font-family: $rocksalt;
+    font-size: 1.8em;
+
+    .when {
+      white-space: nowrap;
+    }
+  }
+
+  // Short description
+  .info {
+    margin: 1em 0;
+    font-size: 1.2em;
+
+    @include breakpoint($grid-max) {
+      margin-left: 2em;
+    }
+  }
+
+  // Map links
+  .map {
+    &::after {
+      content: ' ';
+      display: inline-block;
+      width: 1em;
+      height: 1em * (440/375);
+      background: image-url('maps-google.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      transform: translateX(3px) translateY(5px);
+    }
+  }
+}

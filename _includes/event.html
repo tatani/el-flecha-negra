@@ -1,8 +1,33 @@
-<div class="event-wrapper">
+<div class="event-list">
   <div class="event">
-    We played <strong>{{ event.title }}</strong>
-    {% if event.where %}at {{ event.where }}{% endif %}
-    {% if event.date %}on {{ event.date }}{% endif %}
-    {% if event.more-info %}&mdash; <a href="{{ event.more-info }}">more info</a>{% endif %}.
+
+    {% if event.time != null %}
+      {% capture timestamp %}T{{ event.time }}+01:00{% endcapture %}
+      {% capture human_date %}{{ event.date | date: "%-d %B" }} <span class="when">at {{ event.time }}</span>{% endcapture %}
+    {% else %}
+      {% capture timestamp %}{% endcapture %}
+      {% capture human_date %}{{ event.date | date: "%-d %B" }}{% endcapture %}
+    {% endif %}
+
+    <time datetime="{{ event.date }}{{ timestamp }}">{{ human_date }}</time>
+    <div class="info">
+      <span class="where"><strong>Where:</strong>
+        {% if event.where %}
+          {% if event.map != '' %}
+            <a href="{{ event.map }}" class="map" target="_blank" rel="nofollow">{{ event.where }}</a>
+          {% else %}
+            {{ event.where }}
+          {% endif %}
+        {% endif %}
+      </span>
+      <span class="more">
+        {% if event.more-info %}
+          &ndash; <a href="{{ event.more-info }}">info</a>
+        {% endif %}
+      </span>
+      <div class="desc">
+        {{ event.content }}
+      </div>
+    </div><!-- .info -->
   </div>
 </div>

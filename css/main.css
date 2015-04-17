@@ -421,7 +421,7 @@ strong {
 
 h1,
 h2 {
-  font-family: 'amsterdam';
+  font-family: "amsterdam", sans-serif;
   font-weight: 400;
   margin: .5em 0;
   line-height: 0.7;
@@ -546,6 +546,34 @@ footer .copyright a {
 
 img {
   max-width: 100%;
+}
+
+.event time {
+  color: #ddd;
+  font-family: "Rock Salt", cursive;
+  font-size: 1.8em;
+}
+.event time .when {
+  white-space: nowrap;
+}
+.event .info {
+  margin: 1em 0;
+  font-size: 1.2em;
+}
+@media (min-width: 860px) {
+  .event .info {
+    margin-left: 2em;
+  }
+}
+.event .map::after {
+  content: ' ';
+  display: inline-block;
+  width: 1em;
+  height: 1.17333em;
+  background: url('../img/maps-google.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: translateX(3px) translateY(5px);
 }
 
 .video-wrapper {
