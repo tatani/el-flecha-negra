@@ -108,7 +108,7 @@ gulp.task('critical', function (cb) {
 // Minify images
 //////////////////////////////
 gulp.task('imagemin', function() {
-  return gulp.src('_img/*')
+  return gulp.src('_img/**/*')
     .pipe(imagemin({
       progressive: true,
       svgoPlugins: [{removeViewBox: false}]
