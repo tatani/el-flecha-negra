@@ -16,6 +16,7 @@ var stylish = require('jshint-stylish');
 var uglify = require('gulp-uglify');
 var minCSS = require('gulp-minify-css');
 var critical = require('critical');
+var imagemin = require('gulp-imagemin');
 var taskListing = require('gulp-task-listing');
 
 //////////////////////////////
@@ -104,9 +105,21 @@ gulp.task('critical', function (cb) {
 });
 
 //////////////////////////////
+// Minify images
+//////////////////////////////
+gulp.task('imagemin', function() {
+  return gulp.src('_img/*')
+    .pipe(imagemin({
+      progressive: true,
+      svgoPlugins: [{removeViewBox: false}]
+    }))
+    .pipe(gulp.dest('img'));
+});
+
+//////////////////////////////
 // BrowserSync + Gulp watch
 //////////////////////////////
-gulp.task('bs', ['compass', 'js', 'jekyll', 'browser-sync', 'watch']);
+gulp.task('bs', ['compass', 'js', 'imagemin', 'jekyll', 'browser-sync', 'watch']);
 
 // Watch Files For Changes
 gulp.task('watch', function() {
