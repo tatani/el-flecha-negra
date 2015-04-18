@@ -35,6 +35,13 @@
       </p>
     </footer>
 
+    <script>
+      /* async CSS */
+      {% include loadCSS.js %}
+      loadCSS("//fonts.googleapis.com/css?family=Rock+Salt&subset=latin");
+    </script>
+    <noscript><link rel="stylesheet" href="//fonts.googleapis.com/css?family=Rock+Salt&subset=latin"></noscript>
+
     <script async src="/js/main.js"></script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -44,20 +51,6 @@
 
       ga('create', '{{ site.ga }}', 'auto');
       ga('send', 'pageview');
-    </script>
-    <script>
-      WebFontConfig = {
-        google: { families: [ 'Rock+Salt::latin' ] }
-      };
-      (function() {
-        var wf = document.createElement('script');
-        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
-          '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-        wf.type = 'text/javascript';
-        wf.async = 'true';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(wf, s);
-      })();
     </script>
 
   </body>
