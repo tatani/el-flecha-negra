@@ -15,6 +15,7 @@ var jshint = require('gulp-jshint');
 var stylish = require('jshint-stylish');
 var uglify = require('gulp-uglify');
 var minCSS = require('gulp-minify-css');
+var critical = require('critical');
 var taskListing = require('gulp-task-listing');
 
 //////////////////////////////
@@ -82,6 +83,27 @@ gulp.task('js-lc', function () {
 gulp.task('js', ['js-pf', 'js-lc']);
 
 //////////////////////////////
+// Generate & Inline Critical-path CSS
+//////////////////////////////
+gulp.task('critical', function (cb) {
+  critical.generate({
+    base: '_site/',
+    src: 'index.html',
+    css: ['css/main.min.css'],
+    dimensions: [{
+      width: 320,
+      height: 480
+    },{
+      width: 1280,
+      height: 960
+    }],
+    dest: '../_includes/critical.css',
+    minify: true,
+    extract: false
+  });
+});
+
+//////////////////////////////
 // BrowserSync + Gulp watch
 //////////////////////////////
 gulp.task('bs', ['compass', 'js', 'jekyll', 'browser-sync', 'watch']);
@@ -90,7 +112,6 @@ gulp.task('bs', ['compass', 'js', 'jekyll', 'browser-sync', 'watch']);
 gulp.task('watch', function() {
   gulp.watch(paths.sass + '/**/*.scss', ['compass']);
   gulp.watch(['./**/*.{md,html}', '!./_site/**/*.*'], ['jekyll']);
-  gulp.watch(paths.js + '/**/*.js', ['js']);
 });
 
 // Add a task to render the output

@@ -4,11 +4,7 @@
     <meta charset="utf-8">
     <title>{{ page.title }} | {{ site.name }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script>
-      {% include loadCSS.js %}
-      loadCSS("/css/main.min.css");
-    </script>
-    <noscript><link rel="stylesheet" href="/css/main.min.css"></noscript>
+    <style>{% include critical.css %}</style>
   </head>
   <body{% if page.bodyclass != '' %} class="{{ page.bodyclass }}"{% endif %}>
     <header>
@@ -38,6 +34,13 @@
         <a href="http://chrisruppel.com">get a website for your band</a>
       </p>
     </footer>
+
+    <script>
+      /* async CSS */
+      {% include loadCSS.js %}
+      loadCSS("/css/main.min.css");
+    </script>
+    <noscript><link rel="stylesheet" ref="/css/main.min.css"></noscript>
 
     <script async src="/js/main.js"></script>
     <script>
