@@ -482,7 +482,7 @@ header nav li {
 }
 header nav li a {
   display: inline-block;
-  padding: .25em 1em;
+  padding: .5em 1em;
   color: #ddd;
   text-decoration: none;
 }
@@ -515,7 +515,7 @@ footer .social {
 }
 footer .social li {
   display: inline-block;
-  margin: 0 .5em;
+  margin: .5em;
   padding-left: 36px;
   background-repeat: no-repeat;
   background-position: 0 0;
