@@ -124,6 +124,7 @@ gulp.task('bs', ['compass', 'js', 'imagemin', 'jekyll', 'browser-sync', 'watch']
 // Watch Files For Changes
 gulp.task('watch', function() {
   gulp.watch(paths.sass + '/**/*.scss', ['compass']);
+  // gulp.watch('_img/**/*', ['imagemin']);
   gulp.watch(['./**/*.{md,html}', '!./_site/**/*.*'], ['jekyll']);
 });
 
