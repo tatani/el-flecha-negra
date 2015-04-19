@@ -13,7 +13,7 @@ _El Flecha Negra_ is a roaring river made of many different musical currents. At
 
 Each one of the members has a deep history in the music scene, playing many stages of Europe and Latin America. After many years of sharing and playing separately, they decided to shape this cheerful and charismatic band. They first formed during June of 2014 in Freiburg im Breisgau, Germany.
 
-Is in Freiburg that they've taken the first steps with this project, taking stage on the streets of the city. It is just as it says in _El Flecha Negra_ — there is nothing more spontaneous and magic than the streets.
+In Freiburg that they are taking the first steps with this project on the streets of the city. It is just as it says in _El Flecha Negra_ — there is nothing more spontaneous and magic than the streets.
 
 They perform in all kinds of rooms, bars, streets and festivals. They spread music, energy, and joy to all who cross their path. In 2015 they are creating their first studio production using their unique mix of accoustic and electric styles, featuring special guests from around the world.
 
