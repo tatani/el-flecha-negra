@@ -1,33 +1,33 @@
-<div class="event-list">
-  <div class="event">
+<div class="event">
+  {% if event.time != null %}
+    {% capture timestamp %}T{{ event.time }}+01:00{% endcapture %}
+    {% capture human_date %}{{ event.date | date: "%-d %B" }} <span class="when">at {{ event.time }}</span>{% endcapture %}
+  {% else %}
+    {% capture timestamp %}{% endcapture %}
+    {% capture human_date %}{{ event.date | date: "%-d %B" }}{% endcapture %}
+  {% endif %}
 
-    {% if event.time != null %}
-      {% capture timestamp %}T{{ event.time }}+01:00{% endcapture %}
-      {% capture human_date %}{{ event.date | date: "%-d %B" }} <span class="when">at {{ event.time }}</span>{% endcapture %}
-    {% else %}
-      {% capture timestamp %}{% endcapture %}
-      {% capture human_date %}{{ event.date | date: "%-d %B" }}{% endcapture %}
-    {% endif %}
-
-    <time datetime="{{ event.date }}{{ timestamp }}">{{ human_date }}</time>
-    <div class="info">
-      <span class="where"><strong>Where:</strong>
-        {% if event.where %}
-          {% if event.map != '' %}
-            <a href="{{ event.map }}" class="map" target="_blank" rel="nofollow">{{ event.where }}</a>
-          {% else %}
-            {{ event.where }}
-          {% endif %}
+  <time datetime="{{ event.date }}{{ timestamp }}">
+    {{ human_date }}
+    <span class="where">
+      {% if event.where %}
+        at
+        {% if event.map != '' %}
+          <a href="{{ event.map }}" class="map" target="_blank" rel="nofollow">{{ event.where }}</a>
+        {% else %}
+          {{ event.where }}
         {% endif %}
-      </span>
+      {% endif %}
+    </span>
+  </time>
+  <div class="info">
+    <div class="desc">
+      {{ event.content }}
       <span class="more">
         {% if event.more-info %}
-          &ndash; <a href="{{ event.more-info }}">info</a>
+          &ndash; <a href="{{ event.more-info }}">more info</a>
         {% endif %}
       </span>
-      <div class="desc">
-        {{ event.content }}
-      </div>
-    </div><!-- .info -->
-  </div>
+    </div>
+  </div><!-- .info -->
 </div>
