@@ -336,7 +336,7 @@ body {
       font-size: 20px; } }
 
 em, strong {
-  color: #fff; }
+  color: #5a3d1e; }
 
 h1, h2 {
   font-family: 'amsterdam', sans-serif;
@@ -360,44 +360,54 @@ ul, ol {
     margin-bottom: .5em; }
 
 main a, footer a {
-  color: #ddd;
+  color: #5a3d1e;
   font-weight: 100;
   text-decoration: none;
-  border-bottom: dotted 1px rgba(221, 221, 221, 0.5);
+  border-bottom: dotted 1px rgba(90, 61, 30, 0.5);
   transition: all .16s ease-in-out; }
   main a:hover, footer a:hover {
-    border-color: #dddddd; }
+    border-color: #5a3d1e; }
 
 body {
-  background: #041425;
-  color: #ddd; }
+  background: #d3b68f;
+  color: #8a5d3e; }
 
-header .logo {
-  margin: .25em 0;
-  text-align: center; }
-header nav {
-  max-width: 860px;
-  margin: 0 auto 2em;
-  text-align: center;
-  border-bottom: 1px dotted rgba(44, 89, 121, 0.25); }
-  header nav li {
-    display: inline-block;
-    margin: 0 .2em; }
-    header nav li a {
+header {
+  padding-top: 19%;
+  background-color: #d3b68f;
+  background-image: url('../img/header-bg__small.png');
+  background-repeat: no-repeat;
+  background-size: 100% auto; }
+  @media (min-width: 660px) {
+    header {
+      padding-top: 13%;
+      background-image: url('../img/header-bg.png'); } }
+  header .logo {
+    margin: 0;
+    text-align: center; }
+  header nav {
+    max-width: 860px;
+    margin: 0 auto 2em;
+    text-align: center;
+    border-bottom: 1px dotted rgba(181, 134, 71, 0.25); }
+    header nav li {
       display: inline-block;
-      padding: .5em 1em;
-      color: #ddd;
-      text-decoration: none; }
-      header nav li a::before {
+      margin: 0 .2em; }
+      header nav li a {
         display: inline-block;
-        content: '\261e';
-        padding-right: 10px;
-        position: relative;
-        top: 2px;
-        transform: translateX(0);
-        transition: all .16s ease-in-out; }
-      header nav li a:hover::before, header nav li a:active::before {
-        transform: translateX(4px); }
+        padding: .5em 1em;
+        color: #5a3d1e;
+        text-decoration: none; }
+        header nav li a::before {
+          display: inline-block;
+          content: '\261e';
+          padding-right: 10px;
+          position: relative;
+          top: 2px;
+          transform: translateX(0);
+          transition: all .16s ease-in-out; }
+        header nav li a:hover::before, header nav li a:active::before {
+          transform: translateX(4px); }
 
 main {
   max-width: 860px;
@@ -426,7 +436,7 @@ footer {
       background-image: url('../img/svg/social-twitter.svg'); }
   footer .copyright {
     text-align: center;
-    color: #2C5979;
+    color: #b58647;
     font-size: .9em; }
     footer .copyright a {
       color: inherit;
@@ -446,7 +456,7 @@ img {
   text-align: center; }
 
 .event time {
-  color: #ddd;
+  color: #5a3d1e;
   font-family: 'Rock Salt', cursive;
   font-size: 1.8em; }
   .event time .when {
