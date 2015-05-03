@@ -5,7 +5,7 @@
 // Import graffiti font
 @font-face {
   font-family: 'amsterdam';
-  src: font-url('amsterdam.ttf') format('truetype');
+  src: url('../fonts/amsterdam.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -19,7 +19,7 @@ body {
   font-weight: 200;
   line-height: 1.36;
 
-  @include breakpoint($big) {
+  @include min-width($big) {
     font-size: $base-font + 2;
   }
 }

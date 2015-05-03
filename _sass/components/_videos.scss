@@ -26,7 +26,7 @@ body.videos {
   h1 {
     font-size: 48px;
 
-    @include breakpoint($big) {
+    @include min-width($big) {
       font-size: 64px;
     }
   }

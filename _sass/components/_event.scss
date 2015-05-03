@@ -24,7 +24,7 @@
     margin: 1em 0;
     font-size: 1.2em;
 
-    @include breakpoint($grid-max) {
+    @include min-width($grid-max) {
       margin-left: 2em;
     }
   }
@@ -36,7 +36,7 @@
       display: inline-block;
       width: 1em;
       height: 1em * (440/375);
-      background: image-url('maps-google.png');
+      background: url('../img/maps-google.png');
       background-repeat: no-repeat;
       background-size: contain;
       transform: translateX(3px) translateY(5px);
