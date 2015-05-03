@@ -57,6 +57,7 @@ gulp.task('sass', function () {
     .pipe(minCSS())
     .pipe(rename('main.min.css'))
     .pipe(gulp.dest('css'))
+    .pipe(gulp.dest('_site/css'))
     .pipe(reload({stream: true}));
 });
 
