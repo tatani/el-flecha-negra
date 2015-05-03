@@ -27,8 +27,7 @@ body {
 // Emphasized text
 em,
 strong {
-  // True white, don't use $white variable!
-  color: #fff;
+  color: $bold;
 }
 
 // Headings
@@ -67,13 +66,13 @@ ol {
 
 // Links
 %link {
-  color: $white;
+  color: $bold;
   font-weight: 100;
   text-decoration: none;
-  border-bottom: dotted 1px rgba($white, .5);
+  border-bottom: dotted 1px rgba($bold, .5);
   transition: $x-standard;
 
   &:hover {
-    border-color: rgba($white, 1);
+    border-color: rgba($bold, 1);
   }
 }

@@ -1,10 +1,22 @@
-//////////////////////////////////////////////////
 // Header
-//////////////////////////////////////////////////
-
+//
+// The global header of the website.
+//
+// Style guide: global.header
 header {
+  padding-top: 19%;
+  background-color: $bg;
+  background-image: url('../img/header-bg__small.png');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+
+  @include min-width($grid-max - 200) {
+    padding-top: 13%;
+    background-image: url('../img/header-bg.png');
+  }
+
   .logo {
-    margin: .25em 0;
+    margin: 0;
     text-align: center;
   }
 
@@ -21,7 +33,7 @@ header {
       a {
         display: inline-block;
         padding: .5em 1em;
-        color: $white;
+        color: $bold;
         text-decoration: none;
 
         // Create a little hand pointing to each link.
