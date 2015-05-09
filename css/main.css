@@ -331,7 +331,7 @@ body {
   font-size: 18px;
   font-weight: 200;
   line-height: 1.36; }
-  @media (min-width: 896px) {
+  @media (min-width: 696px) {
     body {
       font-size: 20px; } }
 
@@ -370,7 +370,26 @@ main a, footer a {
 
 body {
   background: #d3b68f;
-  color: #8a5d3e; }
+  color: #8a5d3e;
+  padding-bottom: 30%;
+  position: relative; }
+  body:after {
+    display: block;
+    content: ' ';
+    width: 100%;
+    height: 0;
+    padding-top: 40%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    background-image: url(../img/footer-bg__small.png);
+    background-repeat: no-repeat;
+    background-size: cover; }
+  @media (min-width: 660px) {
+    body:after {
+      padding-top: 32%;
+      background-image: url(../img/footer-bg.png); } }
 
 header {
   padding-top: 19%;
@@ -380,52 +399,59 @@ header {
   background-size: 100% auto; }
   @media (min-width: 660px) {
     header {
-      padding-top: 13%;
-      background-image: url('../img/header-bg.png'); } }
+      background-image: none;
+      padding-top: 13%; }
+      header:before {
+        display: block;
+        content: ' ';
+        width: 100%;
+        height: 0;
+        padding-top: 19%;
+        position: fixed;
+        z-index: 10;
+        top: 0;
+        background-image: url(../img/header-fg.png);
+        background-size: cover; } }
   header .logo {
     margin: 0;
     text-align: center; }
   header nav {
-    max-width: 860px;
+    max-width: 660px;
     margin: 0 auto 2em;
-    text-align: center;
-    border-bottom: 1px dotted rgba(181, 134, 71, 0.25); }
+    text-align: center; }
     header nav li {
       display: inline-block;
       margin: 0 .2em; }
       header nav li a {
         display: inline-block;
-        padding: .5em 1em;
+        padding: .1em .5em .2em;
         color: #5a3d1e;
-        text-decoration: none; }
-        header nav li a::before {
-          display: inline-block;
-          content: '\261e';
-          padding-right: 10px;
-          position: relative;
-          top: 2px;
-          transform: translateX(0);
-          transition: all .16s ease-in-out; }
-        header nav li a:hover::before, header nav li a:active::before {
-          transform: translateX(4px); }
+        font-family: amsterdam;
+        font-size: 2em;
+        font-weight: 700; }
 
 main {
-  max-width: 860px;
+  max-width: 660px;
   margin: 0 auto;
   padding: 0 36px; }
 
 footer {
-  max-width: 860px;
-  margin: 0 auto;
-  padding: 36px; }
+  position: relative;
+  z-index: 6; }
   footer .social {
+    max-width: 660px;
+    margin: 0 auto;
+    padding: 36px 18px;
     text-align: center; }
     footer .social li {
       display: inline-block;
       margin: .5em;
-      padding-left: 36px;
+      padding-left: 28px;
       background-repeat: no-repeat;
       background-position: 0 0; }
+      @media (min-width: 660px) {
+        footer .social li {
+          padding-left: 36px; } }
     footer .social .soundcloud {
       background-image: url('../img/svg/social-soundcloud.svg'); }
     footer .social .youtube {
@@ -435,6 +461,8 @@ footer {
     footer .social .twitter {
       background-image: url('../img/svg/social-twitter.svg'); }
   footer .copyright {
+    max-width: 660px;
+    margin: 0 auto;
     text-align: center;
     color: #b58647;
     font-size: .9em; }
@@ -443,6 +471,8 @@ footer {
       border-color: inherit;
       white-space: nowrap;
       font-size: .8em; }
+      footer .copyright a:hover {
+        color: #5a3d1e; }
 
 img {
   max-width: 100%;
@@ -457,14 +487,14 @@ img {
 
 .event time {
   color: #5a3d1e;
-  font-family: 'Rock Salt', cursive;
-  font-size: 1.8em; }
+  font-family: 'amsterdam', sans-serif;
+  font-size: 2.8em; }
   .event time .when {
     white-space: nowrap; }
 .event .info {
   margin: 1em 0;
   font-size: 1.2em; }
-  @media (min-width: 860px) {
+  @media (min-width: 660px) {
     .event .info {
       margin-left: 2em; } }
 .event .map::after {
@@ -494,6 +524,6 @@ body.videos {
   text-align: center; }
   body.videos h1 {
     font-size: 48px; }
-    @media (min-width: 896px) {
+    @media (min-width: 696px) {
       body.videos h1 {
         font-size: 64px; } }
