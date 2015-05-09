@@ -10,7 +10,7 @@ header {
   background-repeat: no-repeat;
   background-size: 100% auto;
 
-  @include min-width($grid-max - 200) {
+  @include min-width($grid-max) {
     background-image: none;
     padding-top: 13%;
 
@@ -49,9 +49,6 @@ header {
         font-family: amsterdam;
         font-size: 2em;
         font-weight: 700;
-        text-decoration: none;
-        border-radius: 10%;
-        box-shadow: inset 1px 1px 4px rgba($bold, 0.4);
       }
     }
   }

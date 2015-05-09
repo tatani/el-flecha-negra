@@ -2,7 +2,7 @@
 // Typography
 //////////////////////////////////////////////////
 
-// Import graffiti font
+// Import graffiti fonts
 @font-face {
   font-family: 'amsterdam';
   src: url('../fonts/amsterdam.ttf') format('truetype');
@@ -10,7 +10,9 @@
   font-style: normal;
 }
 $amsterdam: 'amsterdam', sans-serif;
-$rocksalt: 'Rock Salt', cursive;
+
+// Comes from Google fonts
+$rocksalt: 'Rock Salt', 'amsterdam', sans-serif;
 
 // Set size and default spacing
 body {

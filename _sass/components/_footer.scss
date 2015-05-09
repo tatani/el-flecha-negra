@@ -3,24 +3,31 @@
 //////////////////////////////////////////////////
 
 footer {
-  max-width: $grid-max;
-  margin: 0 auto;
-  padding: $base-gutter;
+  // position on top of footer graphic
+  position: relative;
+  z-index: $z + 5;
 
   a {
     @extend %link;
   }
 
   .social {
+    max-width: $grid-max;
+    margin: 0 auto;
+    padding: $base-gutter $base-gutter/2;
     text-align: center;
 
     // Default social link styles
     li {
       display: inline-block;
       margin: .5em;
-      padding-left: $base-gutter;
+      padding-left: $base-gutter - 8px;
       background-repeat: no-repeat;
       background-position: 0 0;
+
+      @include min-width($grid-max) {
+        padding-left: $base-gutter;
+      }
     }
 
     // Individual icons
@@ -39,6 +46,8 @@ footer {
   }
 
   .copyright {
+    max-width: $grid-max;
+    margin: 0 auto;
     text-align: center;
     color: $subdued;
     font-size: .9em;
@@ -48,6 +57,10 @@ footer {
       border-color: inherit;
       white-space: nowrap;
       font-size: .8em;
+
+      &:hover {
+        color: $bold;
+      }
     }
   }
 }

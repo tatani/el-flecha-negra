@@ -7,10 +7,13 @@ $base-font: 18px;
 $base-gutter: ($base-font * 2);
 
 // Grid max
-$grid-max: 860px;
+$grid-max: 660px;
 
 // Breakpoint settings
 $big: $grid-max + $base-gutter;
 
 // Transitions
 $x-standard: all .16s ease-in-out;
+
+// z-index
+$z: 1;
