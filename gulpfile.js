@@ -23,6 +23,8 @@ var taskListing = require('gulp-task-listing');
 // Jekyll
 //////////////////////////////
 gulp.task('jekyll', function() {
+  bs.notify('<span style="color: grey">Running:</span> Jekyll building');
+
   return spawn('bundle', ['exec', 'jekyll', 'build', '--config=_config.yml,_config.dev.yml'], {stdio: 'inherit'})
     .on('close', reload);
 });
@@ -40,6 +42,8 @@ gulp.task('browser-sync', function() {
 // Sass
 //////////////////////////////
 gulp.task('sass', function () {
+  bs.notify('<span style="color: grey">Running:</span> Sass compiling');
+
   return gulp.src('_sass/**/*.scss')
     .pipe(sass({
       outputStyle: 'nested',
@@ -48,6 +52,7 @@ gulp.task('sass', function () {
         log(c.green('sass'), 'compiled to', dest[dest.length - 1]);
       },
       onError: function(err, res) {
+        bs.notify('<span style="color: grey">Running:</span> Sass failed to compile');
         log(c.red('Sass failed to compile'));
         log(c.red('> ') + err.file.split('/')[err.file.split('/').length - 1] + ' ' + c.underline('line ' + err.line) + ': ' + err.message);
       }
