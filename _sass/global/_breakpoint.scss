@@ -1,0 +1,10 @@
+// Breakpoint
+//
+// A mixin to next media queries.
+//
+// Style guide: utilities.breakpoint
+@mixin min-width($size) {
+  @media (min-width: $size) {
+    @content;
+  }
+}

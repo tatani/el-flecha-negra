@@ -6,6 +6,10 @@
 $white: #ddd;
 $black: #000;
 
-// EFN colors.
-$blue-dark: #041425;
-$subdued: #2C5979;
+// EFN colors
+$bg: #d3b68f;
+$text: #8a5d3e;
+$bold: #5a3d1e;
+$subdued: darken($bg, 20%);
+
+$blue: #8ad2ce;

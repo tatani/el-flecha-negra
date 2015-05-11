@@ -1,15 +1,15 @@
 // Gulp utils
 var gulp = require('gulp');
-var gutil = require('gulp-util');
-var color = gutil.colors;
-var cp = require('child_process');
+var u = require('gulp-util');
+var log = u.log;
+var c = u.colors;
+var spawn = require('child_process').spawn;
 
 // Include Our Plugins
 var bs = require('browser-sync');
 var reload = bs.reload;
 var rename = require('gulp-rename');
-var compass = require('gulp-compass');
-var paths = require('compass-options').paths();
+var sass = require('gulp-sass');
 var prefix = require('gulp-autoprefixer');
 var jshint = require('gulp-jshint');
 var stylish = require('jshint-stylish');
@@ -23,7 +23,9 @@ var taskListing = require('gulp-task-listing');
 // Jekyll
 //////////////////////////////
 gulp.task('jekyll', function() {
-  return cp.spawn('bundle', ['exec', 'jekyll', 'build', '--config=_config.yml,_config.dev.yml'], {stdio: 'inherit'})
+  bs.notify('<span style="color: grey">Running:</span> Jekyll building');
+
+  return spawn('bundle', ['exec', 'jekyll', 'build', '--config=_config.yml,_config.dev.yml'], {stdio: 'inherit'})
     .on('close', reload);
 });
 
@@ -37,33 +39,30 @@ gulp.task('browser-sync', function() {
 });
 
 //////////////////////////////
-// Compass
+// Sass
 //////////////////////////////
-gulp.task('compass', function () {
-  return gulp.src(paths.sass + '/**/*.scss')
-    .pipe(compass({
-      config_file: 'config.rb',
-      bundle_exec: true,
-      sourcemap: false,
-      time: true,
-      css: paths.css,
-      sass: paths.sass,
-      image: paths.img,
-      fonts: paths.fonts
+gulp.task('sass', function () {
+  bs.notify('<span style="color: grey">Running:</span> Sass compiling');
+
+  return gulp.src('_sass/**/*.scss')
+    .pipe(sass({
+      outputStyle: 'nested',
+      onSuccess: function(css) {
+        var dest = css.stats.entry.split('/');
+        log(c.green('sass'), 'compiled to', dest[dest.length - 1]);
+      },
+      onError: function(err, res) {
+        bs.notify('<span style="color: grey">Running:</span> Sass failed to compile');
+        log(c.red('Sass failed to compile'));
+        log(c.red('> ') + err.file.split('/')[err.file.split('/').length - 1] + ' ' + c.underline('line ' + err.line) + ': ' + err.message);
+      }
     }))
-    .on('error', function(error) {
-      // Compass prints the error, so only have to log that we handled it.
-      gutil.log(
-        color.red('compass'),
-        'Error caught. Continuing...'
-      );
-      this.emit('end');
-    })
-    .pipe(gulp.dest(paths.css))
+    .pipe(gulp.dest('css'))
     .pipe(prefix("last 2 versions", "> 1%"))
     .pipe(minCSS())
     .pipe(rename('main.min.css'))
-    .pipe(gulp.dest(paths.css))
+    .pipe(gulp.dest('css'))
+    .pipe(gulp.dest('_site/css'))
     .pipe(reload({stream: true}));
 });
 
@@ -119,12 +118,12 @@ gulp.task('imagemin', function() {
 //////////////////////////////
 // BrowserSync + Gulp watch
 //////////////////////////////
-gulp.task('bs', ['compass', 'js', 'imagemin', 'jekyll', 'browser-sync', 'watch']);
+gulp.task('bs', ['sass', 'js', 'imagemin', 'jekyll', 'browser-sync', 'watch']);
 
 // Watch Files For Changes
 gulp.task('watch', function() {
-  gulp.watch(paths.sass + '/**/*.scss', ['compass']);
-  // gulp.watch('_img/**/*', ['imagemin']);
+  gulp.watch('_sass/**/*.scss', ['sass']);
+  gulp.watch('_img/**/*', ['imagemin']);
   gulp.watch(['./**/*.{md,html}', '!./_site/**/*.*'], ['jekyll']);
 });
 

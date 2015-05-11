@@ -3,42 +3,51 @@
 //////////////////////////////////////////////////
 
 footer {
-  max-width: $grid-max;
-  margin: 0 auto;
-  padding: $base-gutter;
+  // position on top of footer graphic
+  position: relative;
+  z-index: $z + 5;
 
   a {
     @extend %link;
   }
 
   .social {
+    max-width: $grid-max;
+    margin: 0 auto;
+    padding: $base-gutter $base-gutter/2;
     text-align: center;
 
     // Default social link styles
     li {
       display: inline-block;
       margin: .5em;
-      padding-left: $base-gutter;
+      padding-left: $base-gutter - 8px;
       background-repeat: no-repeat;
       background-position: 0 0;
+
+      @include min-width($grid-max) {
+        padding-left: $base-gutter;
+      }
     }
 
     // Individual icons
     .soundcloud {
-      background-image: inline-image('svg/social-soundcloud.svg');
+      background-image: url('../img/svg/social-soundcloud.svg');
     }
     .youtube {
-      background-image: inline-image('svg/social-youtube.svg');
+      background-image: url('../img/svg/social-youtube.svg');
     }
     .facebook {
-      background-image: inline-image('svg/social-facebook.svg');
+      background-image: url('../img/svg/social-facebook.svg');
     }
     .twitter {
-      background-image: inline-image('svg/social-twitter.svg');
+      background-image: url('../img/svg/social-twitter.svg');
     }
   }
 
   .copyright {
+    max-width: $grid-max;
+    margin: 0 auto;
     text-align: center;
     color: $subdued;
     font-size: .9em;
@@ -48,6 +57,10 @@ footer {
       border-color: inherit;
       white-space: nowrap;
       font-size: .8em;
+
+      &:hover {
+        color: $bold;
+      }
     }
   }
 }

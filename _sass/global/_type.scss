@@ -2,15 +2,17 @@
 // Typography
 //////////////////////////////////////////////////
 
-// Import graffiti font
+// Import graffiti fonts
 @font-face {
   font-family: 'amsterdam';
-  src: font-url('amsterdam.ttf') format('truetype');
+  src: url('../fonts/amsterdam.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 $amsterdam: 'amsterdam', sans-serif;
-$rocksalt: 'Rock Salt', cursive;
+
+// Comes from Google fonts
+$rocksalt: 'Rock Salt', 'amsterdam', sans-serif;
 
 // Set size and default spacing
 body {
@@ -19,7 +21,7 @@ body {
   font-weight: 200;
   line-height: 1.36;
 
-  @include breakpoint($big) {
+  @include min-width($big) {
     font-size: $base-font + 2;
   }
 }
@@ -27,8 +29,7 @@ body {
 // Emphasized text
 em,
 strong {
-  // True white, don't use $white variable!
-  color: #fff;
+  color: $bold;
 }
 
 // Headings
@@ -67,13 +68,13 @@ ol {
 
 // Links
 %link {
-  color: $white;
+  color: $bold;
   font-weight: 100;
   text-decoration: none;
-  border-bottom: dotted 1px rgba($white, .5);
+  border-bottom: dotted 1px rgba($bold, .5);
   transition: $x-standard;
 
   &:hover {
-    border-color: rgba($white, 1);
+    border-color: rgba($bold, 1);
   }
 }
