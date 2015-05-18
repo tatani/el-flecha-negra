@@ -7,6 +7,6 @@ bodyclass: videos
 
 <h1>Videos of <em>El Flecha Negra</em></h1>
 
-{% for video in site.videos %}
+{% for video in site.videos reversed %}
   {% include youtube.html %}
 {% endfor %}
