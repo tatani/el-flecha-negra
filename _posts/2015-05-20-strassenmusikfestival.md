@@ -2,8 +2,8 @@
 title: Internationales Strassenmusikfestival
 ---
 
-[![El Flecha Negra playing at International Music Festival](/img/strassenmusikfestival.png)](https://facebook.com/Int.StrassenmusikFestival)
+[![El Flecha Negra playing at International Street Music Festival](/img/strassenmusikfestival.png)](https://facebook.com/Int.StrassenmusikFestival)
 
-Bald spielen wir bei dem Internationalen Strassenmusikfestival in Ludwigsburg, Deutschland 22 Mai bis 24 Mai. Wir spielen ein paar mal, also komm irgendwann und wir sehen uns da!
+Bald spielen wir beim internationalen Straßenmusikfestival in Ludwigsburg, Deutschland. Vom 22. bis 24 Mai spielen wir mehrere Sets, also komm vorbei! Wir freuen uns auf dich.
 
 We'll be playing at the International Street Music Festival in Ludwigsburg, Germany from May 22-25. We'll be playing multiple sets so come and enjoy music from all over the world. See you there!
