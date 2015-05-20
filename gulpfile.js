@@ -124,7 +124,7 @@ gulp.task('bs', ['sass', 'js', 'imagemin', 'jekyll', 'browser-sync', 'watch']);
 gulp.task('watch', function() {
   gulp.watch('_sass/**/*.scss', ['sass']);
   gulp.watch('_img/**/*', ['imagemin']);
-  gulp.watch(['./**/*.{md,html}', '!./_site/**/*.*'], ['jekyll']);
+  gulp.watch(['_config*', './**/*.{md,html}', '!./_site/**/*.*'], ['jekyll']);
 });
 
 // Add a task to render the output
