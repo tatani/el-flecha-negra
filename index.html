@@ -6,7 +6,7 @@ picturefill: true
 bodyclass: front
 ---
 
-{% for news in site.posts reversed limit:2 %}
+{% for news in site.posts limit:2 %}
   {% include news.html %}
 {% endfor %}
 
