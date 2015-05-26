@@ -2,6 +2,8 @@
 title: "#1 bei Strassenmusikfestival!!!"
 ---
 
+![El Flecha Negra 1. Platz bei Straßenmusikfestival in Ludwigsburg](/img/news/smf-ludwigsburg-el-flecha-negra.jpg)
+
 Wir haben die Ehre, Euch mitzuteilen dass wir bei dem diesjährigen 
 12. Strassenmusikfestival in Ludwigsburg von 40 Bands den 1. Platz gemacht haben, das Abschlusskonzert gestern vor knapp 10.000 Leuten war der oberhammer! Wir bedanken uns bei allen, die fuer uns gestimmt haben und uns so toll unterstützen. Dieser Preis ist auch Eurer!!!! DANKESCHÖN!
 
