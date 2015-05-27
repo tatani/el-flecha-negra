@@ -10,4 +10,8 @@ main {
   a {
     @extend %link;
   }
+
+  img {
+    border-radius: 3%;
+  }
 }

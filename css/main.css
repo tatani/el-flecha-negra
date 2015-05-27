@@ -434,6 +434,8 @@ main {
   max-width: 660px;
   margin: 0 auto;
   padding: 0 36px; }
+  main img {
+    border-radius: 3%; }
 
 footer {
   position: relative;
