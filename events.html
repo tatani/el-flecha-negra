@@ -8,7 +8,27 @@ bodyclass: events
 <h1>Upcoming Shows and Gigs</h1>
 
 <div class="event-list">
-  {% for event in site.events %}
-    {% if event.published != false %}{% include event.html %}{% endif %}
+  {% for event in site.events reversed %}
+    {% if event.published != false %}
+      {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
+      {% capture posttime %}{{event.date | date: '%s'}}{% endcapture %}
+      {% if posttime > nowunix %}
+        {% include event.html %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+</div>
+
+<h1>Past Shows</h1>
+
+<div class="event-list">
+  {% for event in site.events reversed %}
+    {% if event.published != false %}
+      {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
+      {% capture posttime %}{{event.date | date: '%s'}}{% endcapture %}
+      {% if posttime < nowunix %}
+        {% include event.html %}
+      {% endif %}
+    {% endif %}
   {% endfor %}
 </div>
